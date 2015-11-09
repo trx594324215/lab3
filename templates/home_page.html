@@ -1,0 +1,26 @@
+<html> 
+<head>    
+	<title>BOOK</title> 
+</head> 
+<body>
+	{% if errors %}
+		<ul>
+			{% for error in errors %}
+			<li>{{ error }}</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+	<ul>
+	{% for book in Book %}
+		<a href="more/?ID={{ book.ISBN }}"><li>{{ book }}</a>     </li>
+	{% endfor %}
+	</ul>
+	<ul>
+		<a href="addbook/"><p> addbook </a></p>
+	</ul>    
+	<form action="/search" method="get">        
+		<input type="text" name="q">        
+		<input type="submit" value="Search">    
+	</form> 
+</body> 
+</html>

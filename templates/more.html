@@ -1,0 +1,19 @@
+<html> 
+<head>    
+	<title>MORE</title> 
+</head> 
+<body>
+	<li>书籍名称：{{ q.Title }}</li>
+	<li>作者名字：{{ a }}</li>
+	<li>作者年龄：{{ q.AuthorsID.Age }}</li>
+	<li>作者国籍：{{ q.AuthorsID.Country}}</li>
+	<li>出版社：{{ q.Publisher }}</li>
+	<li>出版日期：{{ q.PublishDate }}</li>
+	<form action="" method="get">
+		<a href="/delete/?D={{ q.ISBN }}">delete</a>
+	</form>
+	<form action="/edit/?D={{ q.ISBN }}" method="get">
+		<a href="/edit/?D={{ q.ISBN }}">edit</a>
+	</form>
+</body> 
+</html>
