@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 from books.models import Book
 from django.shortcuts import render_to_response
+#the main page
+
 
 def home(request):
     errors = []

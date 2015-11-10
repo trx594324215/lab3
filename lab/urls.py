@@ -3,6 +3,8 @@ from django.contrib import admin
 from lab import views
 from lab import my_homepage_view
 #import my_homepage_view.home
+#all the urls
+
 admin.autodiscover()
 
 urlpatterns = patterns('',

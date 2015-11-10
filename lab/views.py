@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from books.models import Book,Author
+#for all the views
+
 
 def more(request):
     ID = request.GET['ID']
